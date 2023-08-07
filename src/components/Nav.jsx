@@ -23,7 +23,7 @@ function Nav() {
             </a>
           </li>
           <li className="nav__list">
-            <a href="/" className="nav__link nav__link--primary">
+            <a href="/book" className="nav__link nav__link--primary">
               Books
             </a>
           </li>

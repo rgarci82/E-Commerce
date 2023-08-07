@@ -7,6 +7,8 @@ import Landing from "./components/Landing";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
+import Books from "./components/pages/Books";
+import { books } from "./data";
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
       <div className="App">
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="/book" element={<Books books={books} />} />
         </Routes>
         <Footer />
       </div>
