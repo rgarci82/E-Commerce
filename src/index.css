@@ -440,3 +440,64 @@ Explore
   flex-direction: column;
   align-items: center;
 }
+
+/*
+
+Footer
+
+*/
+
+footer {
+  background-color: #242424;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo--img {
+  width: 160px;
+  filter: grayscale(1) invert(1);
+}
+
+.footer__link,
+.footer__copyright {
+  color: #fff;
+}
+
+.footer__list {
+  margin: 20px 0 24px 0;
+}
+
+.footer__link {
+  padding: 0 8px;
+}
+
+.no-cursor {
+  cursor: not-allowed;
+}
+
+@media (max-width: 550px) {
+  .btn__menu {
+    display: block;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .highlight {
+    width: 100%;
+  }
+
+  .highlight:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .cart__book--img {
+    display: none;
+  }
+  .cart__book--info {
+    padding-left: 0;
+  }
+}
