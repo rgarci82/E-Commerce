@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Books from "./components/pages/Books";
 import { books } from "./data";
+import BookInfo from "./components/pages/BookInfo";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/book" element={<Books books={books} />} />
+          <Route path="/books" element={<Books books={books} />} />
+          <Route path="/books/:id" element={<BookInfo books={books} />} />
         </Routes>
         <Footer />
       </div>
